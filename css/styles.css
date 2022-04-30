@@ -99,6 +99,12 @@ footer .links > a {
     color: rgb(140, 83, 83);
 }
 
+
+.new_text {
+    display: none;
+    color: #F1300E;
+}
+
 .new_news {
     display: none;
     position: absolute;
@@ -127,6 +133,8 @@ footer .links > a {
 запись nth-child(-n+2) - позволяет получить первые 2 потомка, 
 nth-child(-n+5) - первые 5 потомков 
 */
-.news > article:nth-child(-n+2) > .new_news {
+
+article:nth-child(-n+2) > .new_news, 
+article:nth-child(-n+2) .new_text {
     display: inline;
 }
