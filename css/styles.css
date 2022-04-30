@@ -9,7 +9,8 @@ header {
     align-items: center;
     justify-content: center;
     height: 400px;
-    background: url('./../assets/images/city-001.webp') bottom no-repeat;
+    background: url('https://cdn.pixabay.com/photo/2016/10/28/13/09/usa-1777986_960_720.jpg') bottom no-repeat;
+    /* background: url('./../assets/images/city-001.webp') bottom no-repeat; */
     background-size: cover;
 }
 
