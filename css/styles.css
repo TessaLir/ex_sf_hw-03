@@ -132,7 +132,7 @@ article:nth-child(-n+2) > .new_news {
     display: inline;
 }
 
-article:nth-child(-n+2) h2::before {
+.news > article:nth-child(-n+2) h2::before {
     content: "NEW";
     margin-right: 8px;
     color: #F1300E;
