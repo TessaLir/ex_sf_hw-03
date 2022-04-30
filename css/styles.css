@@ -92,3 +92,8 @@ footer .links > a {
     font-family: 'Times New Roman', Times, serif;
 }
 
+.important_clarification {
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: rgb(140, 83, 83);
+}
