@@ -39,6 +39,7 @@ article {
 }
 
 .news>article {
+    position: relative;
     border-bottom: 1px solid #808080;
 }
 
@@ -96,4 +97,36 @@ footer .links > a {
     font-weight: bolder;
     text-transform: uppercase;
     color: rgb(140, 83, 83);
+}
+
+.new_news {
+    display: none;
+    position: absolute;
+    padding: 8px;
+    text-transform: uppercase;
+    border: 1px solid #F1300E;
+    border-radius: 16px;
+    color: #F1300E;
+    background-color: #F1300E25;
+    right: 25px;
+}
+
+.news > article:nth-child(even) {
+    border-radius: 16px;
+    background-color: rgb(227, 204, 174)
+}
+
+/* Можно описывать точечно на каждую запись */
+/* .news > article:first-child > .new_news,
+.news > article:nth-child(2) > .new_news {
+    display: inline;
+} */
+
+/* 
+Но лучше описывать конкретно, 
+запись nth-child(-n+2) - позволяет получить первые 2 потомка, 
+nth-child(-n+5) - первые 5 потомков 
+*/
+.news > article:nth-child(-n+2) > .new_news {
+    display: inline;
 }
